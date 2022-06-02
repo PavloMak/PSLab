@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="Windows-1251">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search for file</title>
+</head>
+<body>
+<p>Search for file:</p>
+<form action="/PSLab/check-existence" method="post">
+    <ul>
+        <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </li>
+        <li>
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password">
+        </li>
+        <li>
+            <label for="key">Key:</label>
+            <input type="text" id="Key" name="key">
+        </li>
+        <li class="form_button">
+            <button type="submit">Submit</button>
+        </li>
+    </ul>
+</form>
+</body>
+</html>

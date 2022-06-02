@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="Windows-1251">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Captcha</title>
+</head>
+<body>
+<img th:src="${im}" width="500" height="333">
+<form action="/PSLab/check_captcha" method="post">
+    <ul>
+        <li>
+            <label for="captcha">Captcha:</label>
+            <input type="text" id="captcha" name="captcha">
+        </li>
+        <li class="form_button">
+            <button type="submit">Submit</button>
+        </li>
+    </ul>
+</form>
+</body>
+</html>
